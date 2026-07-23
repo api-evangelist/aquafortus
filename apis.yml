@@ -1,7 +1,31 @@
 aid: aquafortus
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aquafortus.png
 name: Aquafortus
-description: Aquafortus is a company surfaced as a portfolio company of dcvc and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Aquafortus Technologies is a New Zealand-based deep-tech water treatment
+  company that develops patented non-thermal, zero-liquid-discharge (ZLD)
+  desalination technology for high-salinity industrial brines. Its ABX system
+  uses a solvent-extraction and membrane-filtration process at ambient
+  temperatures to turn up to 98% of high-salinity brine into fresh water while
+  using significantly less energy than thermal alternatives, and can expose,
+  isolate and extract valuable metals and minerals (lithium, copper, magnesium
+  salts and others) from the treated brine. The company targets cooling towers,
+  mining, oil and gas, inland desalination, flue-gas desulphurisation and other
+  high-volume, high-salinity industrial processes. Aquafortus is backed by deep
+  tech venture firm DCVC and Novo Holdings, and was added to the API Evangelist
+  network as a portfolio-lead stub; it publishes no public API or developer
+  surface.
 url: https://raw.githubusercontent.com/api-evangelist/aquafortus/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +35,33 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Water Treatment
+- Desalination
+- Cleantech
+- Zero Liquid Discharge
+- Brine Management
+- Resource Recovery
+- Deep Tech
 apis: []
+common:
+- type: DomainSecurity
+  url: security/aquafortus-domain-security.yml
+- type: Website
+  url: https://aquafortus.net/
+- type: Blog
+  url: https://aquafortus.net/news/
+- type: Support
+  url: https://aquafortus.net/contact/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
